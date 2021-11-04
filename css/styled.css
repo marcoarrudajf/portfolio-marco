@@ -1,0 +1,945 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #b1bab5;
+    color: #fff;
+}
+.cabecalho{
+    position: fixed;
+    display: flex;
+    flex-direction:column-reverse;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 30%;
+    transition: 0.3s; 
+    background-image: url(../img/imgs-familia/s2.jpeg);
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    z-index: 1000;
+}
+.logo-princ{
+    font-size: 6em;
+    height: 90px;
+    cursor: pointer;
+    transition: ease-in-out 0.5s;
+}
+.logo-princ:hover{
+    color:#3b5998;
+    border-bottom: solid 5px #3b5998;
+    font-size: 4em
+}
+.link-princ{
+    display: flex;
+}
+.link-princ li{
+    list-style: none;
+    padding: 10px;
+}
+.link-princ li a{
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: 10px;
+    color: #efefef;
+    height: 10px;
+    transition: ease 0.3s;
+}
+.link-princ a:hover{
+    color: #ff533d;
+    border-bottom: 5px solid #ff533d;
+}
+.js-cabecalho{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position:fixed; 
+    width: 100%;
+    padding:0,50px; 
+    height:100px;  
+    transition: 0.3s; 
+    background-image: none; 
+    background-color:#ff533d; 
+    z-index: 1000;
+}
+.js-cabecalho a:hover{
+    color:#355874;
+    border-bottom: 5px solid #355874;
+}
+.js-cabecalho h1{
+    font-size: 3.5em;
+    height: 60px;
+    margin-right: 100px;
+    color: #355874;
+}
+.js-cabecalho h1:hover{
+    color: #fff;
+    font-size: 2.5em;
+    border-bottom: 5px solid #fff;
+}
+/* navbar */
+#txt-certificado{
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    height: 90px;
+    transition: ease 0.5s;
+}
+.nav-links{
+    position: relative;
+    margin-top:260px;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #172937;
+}
+.nav-links ul{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    width: 80%;
+    height: 90px;
+}
+.nav-links ul li{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    width: 100%;
+    height: 90px;
+}
+.nav-links a{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    text-decoration: none;
+    color: #ff533d;
+    width: 100%;
+    height: 100%;
+    font-size: 1.2em;
+    transition: linear 0.3s;
+}
+.nav-links a:hover{
+    color: #fff;
+    background-color: #ff533d;
+    width: 100%;
+    height: 100%;
+    font-size: 1.3em;
+}
+/*PRIMEIRA PAGINA / PAGINA DE APRESENTAÇÃO*/
+.container-corpo{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%; 
+}
+.corpo-int{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #284452;
+    width: 80%;
+    height: 100vh; 
+}
+.sec-inicio{
+    display: grid;
+    height: 70vh;
+    grid-template-columns: 50% 50%;
+    background-color: #413a3a;  
+}
+.sec-inicio #item1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: tomato;
+    padding: 15px 0 25px 50px; 
+    font-size: 1.8em;
+}
+.sec-inicio #item1 span{
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.5em;
+}
+.sec-inicio #item1 p{
+    display: flex;
+    margin-top: 15px;
+    align-items:stretch;
+    text-align: center;
+    color: #fff;
+    height: 80%;
+    padding: 15px;
+    font-size: 25px;
+}
+.media-icons{
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    color: #fff;
+    margin-bottom: 25px;
+}
+.media-icons a:hover:nth-child(1){
+    transition: ease 0.3s;
+     color: #3b5998;
+}
+.media-icons a:hover:nth-child(2){
+    transition: ease 0.3s;
+    color: #517fa4
+}
+.media-icons a:hover:nth-child(3){
+    transition: ease 0.3s;
+    color: #171515
+}
+.media-icons a:hover:nth-child(4){
+    transition: ease 0.3s;
+    color:  #007bb6
+}
+.media-icons a{
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 50px;
+}
+.btn{
+    width: 80%;
+    text-align: center;
+    margin-bottom: 20px;
+    color:#fff;
+    background: #3a6cf4;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 15px 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+.btn:hover {
+    background: #3b02a3;
+    letter-spacing: 3px;
+}
+.curriculo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 30vh;
+}
+.sec-quem-sou-eu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.sec-titulos{  
+    margin-top: 100px;
+    font-size: 1.5em;
+    color: #ff533d;
+    padding:10px;   
+}
+.sec-um-pouco-de-mim{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 90%;
+    height: 100vh;
+}
+.img-quem-sou-eu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-quem-sou-eu img{
+    max-width:60%;
+    padding: 10px; 
+}
+.txt-quem-sou-eu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.txt-quem-sou-eu p{ 
+    font-size: 1.5em;
+    width: 100%; 
+    padding: 10px 20px;
+    text-align: justify;
+    text-indent: 3ch;
+}
+.corpo-nav{
+    background-color: #afa2a7; 
+}
+/* Animações data-anima */
+
+[data-anima]{    
+    opacity:0;
+    transition: 1s;
+}
+[data-anima="esquerda"]{
+    transform: translate3d(-100px,0,0);/*sequencia = x,y,z*/
+}
+[data-anima="direita"]{
+    transform: translate3d(100px,0,0);/*sequencia = x,y,z*/
+}
+[data-anima].animacao{
+    opacity: 1;
+    transform:translate3d(0,0,0);
+}
+/* O COMEÇO - RESUMO DA MINHA HESTÓRIA */
+.comeco{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #747070;
+    height: fit-content;
+}
+.comeco h1{
+    margin-bottom: 20px;
+}
+.comeco article{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 100%;
+    padding-bottom: 50px;
+}
+.txt-comeco{
+    box-shadow: 5px 10px 15px #000;
+    background-color: #e4e4e4;
+    border-radius: 15px;
+    width: 45%;
+}
+.txt-comeco h2, .txt-comeco h3{
+    color: #030303;
+    font-size: 2.3em;
+    text-align: center;
+    padding: 15px 0;
+}
+.txt-comeco h2:last-child{
+    text-align: right;
+    padding-right: 50px;
+}
+.txt-comeco p{
+    color: #000;
+    font-size: 1.4em;
+    text-align: justify;
+    padding: 10px 20px;
+    margin: 0;
+    text-indent: 3ch;
+}
+
+/* carrossel */
+.slide-certificado{
+ /* background-color: #4d4a5c; */
+    background-image: linear-gradient(#7a7373, #2e2b2b, #546a6a);
+ flex-direction: column;
+}
+.slide-certificado p{
+    padding-top: 10px;
+    font-size: 1.2em;
+}
+#slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 900px;
+    height: 625px;
+    cursor: pointer;
+}
+#slide img{
+    width: 100%;
+    height: 100%;
+    transition:  linear 0.9s;
+    background-size: 100%;
+    background-position: center;
+}
+/* TRABALHOS / PROJETOS REALIZADOS */
+.projetos-realizados{
+    flex-direction: column;
+    font-size: 2em;
+}
+/* CONTATOS */
+.contatos{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #3b5998;
+}
+.lista-contatos{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+}
+.cartao-contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width:19%;
+    height: auto;
+    padding: 20px;
+    border-radius: 10px;
+    transition: ease-out 0.3s; 
+    background-color:#fff;   
+}
+.cartao-contato:hover{
+    width: 20%;
+    height: 430px;
+    padding: 20px; 
+}
+.contato-icon{
+    font-size: 7em;
+    text-align: center;
+    color: #36f;
+    width: 60%;
+    height: 50%;
+    padding: 20px; 
+    transition: 0.5s; 
+    cursor: pointer;
+}
+.contato-icon:hover{
+    font-size: 9em;
+    color: #ff533d;
+}
+.info{
+    text-align: center; 
+    padding: 25px 10px; 
+    color: #030303;
+}
+.info h3{
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.info span{
+    font-size: 1.3em;  
+}
+.info span a{
+    font-size: 20px;
+    color: #030303;
+    text-decoration: none;
+    padding:5px  5px;
+    transition: ease-out 0.3s;
+}
+.info span a:hover{
+    font-size: 1em;
+    color: #ff533d;
+    border-bottom: solid 5px #ff533d;
+    text-decoration: none;  
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -30px;
+    width: 100%;
+    height: 150px;
+    background-color: #ff533d;
+}
+.footer p{
+    text-align: center;
+    font-size: 1.5em;
+}
+
+/* PAGINA MEUS CURSOS */
+.meus-cursos{
+    margin-top: 0;
+}
+.meus-cursos li a{
+    padding: 0 5px;
+}
+.certificados{
+    border:  2px solid #0f0;
+    width: 100%;
+    display: flex;
+    justify-content:flex-start;
+}
+
+/* media screen de 1350 */
+@media (max-width: 1350px) {
+    .logo-princ{
+        font-size: 4em;
+        letter-spacing: 10px;
+        margin-bottom: 5px;
+        color: #efefef;
+    }
+    .logo-princ:hover{
+        color:#3b5998;   
+    }
+    .link-princ li{
+        padding: 5px;
+    }
+    .link-princ li a{
+        font-size: 1.2em;
+        padding: 5px;
+    }
+    .js-cabecalho{
+        height:80px;  
+    }
+    .js-cabecalho a:hover{
+        border-bottom: 3px solid #355874;
+    }
+    .js-cabecalho h1{
+        letter-spacing: 2px;
+        font-size: 2.5em;
+        height: 50px;
+    }
+    .js-cabecalho h1:hover{
+        border-bottom: 3px solid #fff;
+        font-size: 1.8em;
+        margin-right: 10px;
+    }
+    .js-cabecalho li{
+        padding: 0;
+    }
+    /* navbar */
+    .nav-links{
+        height: 80px;
+        margin-top:255px;
+    }
+    .nav-links ul{
+        height: 80px;
+    }
+    .nav-links ul li{
+        height: 80px;
+    }
+    /*PRIMEIRA PAGINA / PAGINA DE APRESENTAÇÃO*/
+    .corpo-int{
+        width: 90%;
+        transition: 0.3s;
+    }
+    .sec-inicio{
+        display: flex;
+        flex-direction: column;
+        height: 70vh;
+    }
+    .sec-inicio #item1{
+        min-width: 90%;
+        padding-top: 40px;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 50%;
+        font-size: 1.5em;
+        transition: 0.3s;
+    }
+    .sec-inicio #item1 h1{
+        font-size: 1.3em;
+    }
+    .sec-inicio #item1 h2{
+        font-size: 1em;
+    }
+    .sec-inicio #item1 span{
+        justify-content: center;
+        font-size: 1em;
+    }
+    .sec-inicio #item1 p{
+        text-align: center;
+        height: 40%;
+        padding: 0 10px;
+        width: 350px;
+        font-size: 1.2rem;
+    }
+    .media-icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 100px;
+        gap: 25px;
+    }
+    .curriculo{
+        width: 90%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items:flex-start;
+        gap: 10px;
+    }
+    .btn{
+        width: 50%;
+        margin-top: 50px;
+        font-size: 1em;
+        font-weight: 600;
+        padding: 15px 10px;
+    }
+    /* quem sou eu */
+    .sec-titulos{  
+        font-size: 1.2em; 
+    }
+    .img-quem-sou-eu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .img-quem-sou-eu img{
+        max-width: 300px;
+        padding:0; 
+    }
+    .txt-quem-sou-eu p{ 
+        font-size: 1em;
+    }
+    /* O COMEÇO - RESUMO DA MINHA HESTÓRIA */
+    .comeco{
+        background-color: #25365f;
+        height: fit-content;
+    }
+    .comeco h1{
+        margin-top: -30px;
+    }
+    .comeco article{
+        padding-bottom: 10px;
+    }
+    .txt-comeco h2, .txt-comeco h3{
+        font-size: 1.2em;
+    }
+    .txt-comeco h2:last-child{
+        padding-right: 10px;
+    }
+    .txt-comeco p{
+        font-size: 1em;
+    }
+ /* PAGINA MEUS CURSOS */
+    .meus-cursos{
+        margin-top: 0;
+    }
+    .meus-cursos li a{
+       padding: 0 5px;
+    }
+    .certificados{
+       width: 100%;
+       display: flex;
+       justify-content:flex-start;
+    }
+
+    /* CONTATOS */
+    .contatos{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #3b5998;
+    }
+    .contatos .sec-titulos {
+        margin-top: 0;
+    }
+    .lista-contatos{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .cartao-contato{
+        display: flex;
+        flex-direction: row;
+        align-items: center; 
+        justify-content: flex-start;
+        width: 90%;
+        height: 130px;
+        padding: 10px 50px; 
+    }
+    .cartao-contato:hover{
+        width: 89%;
+        height: 151px;
+        padding: 10px; 
+    }
+    .contato-icon{
+        font-size: 4em;
+        text-align: center;
+        color: #36f;
+        width: 20%;
+        height: 60%;
+        padding: 0; 
+        margin-left: 5px;
+    }
+    .contato-icon:hover{
+        font-size: 5em;
+        color: #ff533d;
+    }
+    .info{
+        text-align: left; 
+        padding: 25px 20px; 
+        color: #030303;
+    }
+    .info h3{
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+    .info span{
+        font-size: 1.3em;  
+    }
+    .info span a{
+        font-size: 20px;
+        color: #030303;
+        text-decoration: none;
+        padding:5px  5px;
+        transition: ease-out 0.3s;
+    }
+    .footer{
+        margin-top: 0;
+        height: 100px;
+    }
+    .footer p{
+        font-size: 1em;
+    }   
+}
+    
+/* media 910 */
+@media (max-width: 920px) {
+    .cabecalho{
+        flex-direction:column;
+        justify-content: flex-start;
+        align-items: flex-end;
+        height: 50%;
+        position: relative;
+    }
+    .logo-princ{
+        margin-right: 50px;
+        font-size: 3em;
+        height: 50px;
+    }
+    .logo-princ:hover{
+        font-size: 2.5em;
+        margin-right: 100px;
+        margin-top:25px;
+    }
+    .link-princ{
+        flex-direction: column;
+        width: 250px;
+        margin-right: 50px;
+        padding: 15px 10px;
+        transition: 0.5s;
+    }
+    .link-princ li:hover{
+        background-color: #ff533d;
+    }
+    .link-princ li a{
+        opacity: 0.3;
+        font-size: 1.2em;
+    }
+    .link-princ a:hover{
+        color: #efefef;
+        border-bottom: none;
+        letter-spacing: 1px;
+        opacity: 1;
+    } 
+    /* navbar */
+    .nav-links{
+        margin-top:0;
+        height: 60px;
+    }
+    .nav-links ul{
+        width: 90%;
+        height: 60px;
+    }
+    .nav-links ul li{
+        height: 60px;
+    }
+    /*PRIMEIRA PAGINA / PAGINA DE APRESENTAÇÃO*/
+
+    .corpo-int{
+        width: 90%;
+        transition: 0.3s;
+        justify-content: flex-start;
+    }
+    .sec-inicio{
+        height: 90vh;
+    }
+    .sec-inicio #item1{
+        margin-top: 20px;
+        padding-top: 10px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 50%;
+    }
+    .curriculo{
+        width: 100%;
+        height: 250px;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items:center;
+    }
+    .btn{
+        margin-top: 0px;
+    }
+
+    /* quem sou eu */
+    .sec-quem-sou-eu{
+        background-color: #53514e;
+        height: auto;
+    }
+    .sec-titulos{  
+        font-size: 1.2em; 
+    }
+    .sec-um-pouco-de-mim{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;        
+    }
+    .img-quem-sou-eu img{
+        max-width: 300px;
+        margin-top:0;
+        padding:0; 
+    }
+    .txt-quem-sou-eu p{ 
+        font-size: 1.2em;
+    }
+    /* O COMEÇO - RESUMO DA MINHA HESTÓRIA */
+    .comeco h1{
+        margin-top: -100px;
+    }
+    .comeco article{
+        padding-bottom: 10px;
+    }
+    .txt-comeco h2, .txt-comeco h3{
+        font-size: 1.5em;
+    }
+    .txt-comeco h2:last-child{
+        padding-right: 10px;
+    }
+    .txt-comeco p{
+        font-size: 1em;
+    }
+
+    /* PAGINA MEUS CURSOS */
+    .meus-cursos{
+       margin-top: 0;
+    }
+    .meus-cursos li a{
+       padding: 0 5px;
+    }
+    .certificados{
+       width: 100%;
+       display: flex;
+       justify-content:flex-start;
+    }
+ 
+    /* carrossel */
+    #slide{
+        margin: 0 auto;
+        width: 700px;
+        height: 490px;
+    }
+
+    /* CONTATOS */
+    .contatos{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #3b5998;
+    }
+    .contatos .sec-titulos {
+        margin-top: 0;
+    }
+    .lista-contatos{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .cartao-contato{
+        display: flex;
+        flex-direction: row;
+        align-items: center; 
+        justify-content: flex-start;
+        width: 90%;
+        height: 130px;
+        padding: 10px 50px; 
+    }
+    .cartao-contato:hover{
+        width: 89%;
+        height: 151px;
+        padding: 10px; 
+    }
+    .contato-icon{
+        font-size: 4em;
+        text-align: center;
+        color: #36f;
+        width: 20%;
+        height: 60%;
+        padding: 0; 
+        margin-left: 5px;
+    }
+    .contato-icon:hover{
+        font-size: 5em;
+        color: #ff533d;
+    }
+    .info{
+        text-align: left; 
+        padding: 25px 20px; 
+        color: #030303;
+    }
+    .info h3{
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+    .info span{
+        font-size: 1.3em;  
+    }
+    .info span a{
+        font-size: 20px;
+        color: #030303;
+        text-decoration: none;
+        padding:5px  5px;
+        transition: ease-out 0.3s;
+    }
+    .footer{
+        margin-top: 0;
+        height: 100px;
+    }
+    .footer p{
+        font-size: 1em;
+    }   
+}
+
+/* media 790 */
+@media (max-width: 790px) {
+    .logo-princ{
+        font-size: 2em;
+    }
+    .logo-princ:hover{
+        font-size: 2em;
+    }
+
+    /* O COMEÇO - RESUMO DA MINHA HESTÓRIA */
+    .comeco h1{
+        margin-top: -50px;
+    }
+    .txt-comeco h2, .txt-comeco h3{
+        font-size: 1.3em;
+    }
+ 
+    /* carrossel */
+    #slide{
+        margin: 0 auto;
+        width: 500px;
+        height: 350px;
+    }
+
+    /* CONTATOS */
+    
+    .contato-icon{
+        font-size: 3em;
+    }
+    .contato-icon:hover{
+        font-size: 4em;
+    }
+    .info h3{
+        font-size: 1.5em;
+    }
+    .info span{
+        font-size: 1em;  
+    }
+    .footer{
+        height: 80px;
+    }  
+}
+
+
+
+
